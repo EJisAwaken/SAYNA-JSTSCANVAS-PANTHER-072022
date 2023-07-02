@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --white-color:#FFFFFF;
+    --purple-one:#F2CEF2;
+    --purple-two:#9E91B7;
+    --purple-three:#DF99F2;
+    --blue-one:#3D2DA6;
+    --blue-two:#07338C;
+    --blue-three:#021740;
+}
+
+
+
+@font-face {
+    font-family:BEYNO;
+    src:url("fonts/BEYNO/BEYNO.ttf");
+}
+
+
+html{
+    opacity: 0; /* Masquer l'élément initialement */
+    transform: translateX(-100%); /* Déplacer l'élément hors de l'écran à gauche */
+    animation: fadeSlideIn 1s ease-out forwards; /* Animation de fondu et de mouvement */
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+a:active{
+    background-color: darkmagenta;
+    color: darkmagenta;
+}
+
+h1, h2, h3, .pages{
+    font-family: BEYNO;
+}
+
+p{
+    text-align: justify;
+}
+
+body{
+    background-size: cover;
+    background-image: url("Pictures/All pages/arrière_plan.png");
+}
+
+
+                                /*css du scroll bar*/
+
+.scroll{
+   margin: 0 0 0 10px;
+    position: fixed;
+}
+
+.scroll-1{
+    width: max-content;
+    margin: 0 0 0 10px;
+}
+
+.ligned{
+    background-color: #DF99F2;
+    margin: -500px 0 0 20px;
+    width: 3px;
+    max-height: 400px;
+}
+
+
+.ligneg{
+    margin: -70px 0 0 0;
+    border: 1px solid #DF99F2;
+    background-color: #DF99F2;
+    width: 3px;
+    max-height: 400px;
+}
+
+
+
+                                    /*css du header*/
+
+header:hover{
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    text-decoration: underline;
+}
+
+.pages li a:hover{
+    color: violet;
+}
+
+nav{
+    list-style: none;
+    margin-left: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.pages{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages li{
+    margin: 20px;
+}
+
+.logo img:hover{
+
+    filter: invert(69%) sepia(87%) saturate(1131%) hue-rotate(243deg) brightness(98%) contrast(90%);
+}
+
+
+
+
+                                /*css de la partie1*/
+
+.imgpart1 img{
+    width: 100%;
+}
+
+.part1{
+    display: flex;
+    margin: 0 0 0 8%;
+    align-items: center;
+}
+
+.textep1{
+    /*border: 1px solid red;*/
+    width: 25%;
+}
+
+.textep1 h1{
+    font-size: 160%;
+    /*border: 1px solid white;*/
+    width: 200%;
+}
+
+.textep1 h3{
+    font-size: 1em;
+    width: 200%;
+}
+
+.textep1 p{
+    width: 150%;
+    text-align: justify;
+}
+
+@media screen and (min-width: 1000px){
+    .textep1 h1{
+        width: 200%;
+        font-size: 200%;
+
+    }
+}
+
+
+                            /*PARTIE 2*/
+
+/* -------------section liste-----------  */
+section .liste-container{
+    width: 92%;
+    height: auto;
+    background-color: var(--blue-three);
+    display: flex;
+    position: relative;
+    left: 8%;
+
+}
+.fade {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        transform: translate(0);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-300px);
+        opacity: 0;
+    }
+}
+.liste-container div {
+    flex: 1;
+}
+.liste-container .item2, .liste-container .item4 {
+    flex-grow: 1.1;
+    padding: 2% 3%;
+}
+.liste-container h2 {
+    margin-bottom: 15px;
+}
+.liste-container .item1, .lste-container .item3, .liste-container .item5 {
+    display: flex;
+    align-items: stretch;
+}
+/* bouton de scroll pour la liste des personnages*/
+.liste-container .item5 {
+    position: relative;
+}
+.liste-container .suivant {
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    transform: translateY(-50%);
+    border-radius: 42px;
+    box-shadow: var(--white-color) 0 0 20px;
+    cursor: pointer;
+}
+.pictur{
+    max-width :100%;
+}
+/*taille du boutton de scroll*/
+.liste-container .suivant img {
+    width: 30px;
+}
+
+section.sec3-cv{
+    padding-top: 150px;
+}
+.sec3-cv .container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec3-cv .content{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    justify-content: space-between;
+}
+.sec3-cv .box{
+    width: 45%;
+}
+.sec3-cv h2 {
+    margin: 15px 0;
+}
+.description h3{
+    text-align: center;
+}
+section.sec3-cv .container-left li{
+    list-style-type: none;
+    font-size: 10px;
+}
+section.sec3-cv .container-left li::before {
+    content: "-";
+    display: inline-block;
+    width: 1em;
+}
+section.sec3-cv p{
+    margin-top: 10px;
+}
+.identite{
+    color: black;
+    background-color: var(--white-color);
+    width: 65%;
+    margin-top: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.identite img{
+    width: 270px;
+    margin-top: -200px;
+}
+.description{
+    font-family: 'Cantarell';
+    margin-left: 15%;
+    text-align: left;
+    width: 250px;
+}
+.description-menu{
+    padding: 5px;
+}
+.description a{
+    background-color: var(--blue-one);
+    margin: 5px;
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.description-perso{
+    margin-top: 20px;
+    text-align: left;
+    width: 250px;
+    padding-bottom: 60px;
+}
+.description-perso ul li{
+    list-style-type: none;
+    font-family: 'Cantarell';
+    font-size: 10px;
+}
+.description-perso ul li span{
+    font-weight: bold;
+}
+.image-deguisement {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.image-deguisement img {
+    width: 100%;
+}
+
+
+
+
+                                    /*LA PARTIE 3*/
+
+.part3{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+
+.p3{
+    font-size: 1vw;
+}
+
+.imgbio, .imgbio2{
+    text-align: center;
+}
+
+.imgbio img{
+    width: 20vw;
+    margin: -60% 0 0 0;
+}
+
+
+.imgbio2 img{
+    width: 120%;
+}
+
+.droite{
+    width: 45%;
+    margin: 0 40px;
+}
+
+.gauche{
+    width: 60%;
+}
+
+.btn, .bio{
+    text-align: center;
+}
+
+.btn1{
+    font-size: 11px;
+    background-color: darkblue;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.imgbio img{
+    width: 30vw;
+}
+
+.bio1 {
+    color: black;
+    font-size: 16px;
+}
+
+.bio2 {
+    color: black;
+    font-weight: bold;
+
+}
+
+.droite1{
+    opacity: 0.8;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 2%;
+    width: 100%;
+    margin: 30% 0 20% 0;
+}
+
+
+                                    /*CSS DU FORMULAIRE*/
+
+
+
+.formulaire {
+    text-align: center;
+    width: 100%;
+    padding: 15% 0;
+    background-image: url("Pictures/Accueil/Pantherhome7.png");
+}
+
+.form{
+    margin: 0 20%;
+    padding: 7% 6%;
+    border-radius: 30%;
+    background-color: rgba(255,255,255,0.2);
+}
+
+#msg{
+    border-radius: 25px;
+    padding: 3%;
+    color: darkblue;
+}
+
+#name, #email{
+    width: 45%;
+    padding: 2%;
+    border-radius: 45px;
+    color: darkblue;
+}
+
+#submit{
+    background-color:#DF99F2;
+    padding: 2% 7%;
+    border: none;
+    border-radius: 45px;
+
+}
+
+button:hover{
+    cursor: pointer;
+    outline: 2px solid #DF99F2;
+}
+
+[input]{
+    color: blue;
+}
+
+                                    /*LE FOOTER*/
+
+footer{
+    display: flex;
+    background-image: url("Pictures/All pages/back_footer.png");
+    padding: 10%;
+}
+
+.foot1{
+    width: max-content;
+    margin: 0 0 0 10%;
+}
+
+
+.foot2{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    width: 60%;
+}
+
+.foot2 div{
+    font-size: 2vw;
+}
+#logof{
+    width: 10vw;
+}
+
+#bulle{
+    width: 16vw;
+}
+
+#imgfoot1{
+    margin: -70% 0 0 20%;
+}
+
+.reseau{
+    text-align: center;
+}
+.reseau img{
+    margin: 10px;
+    width: 10%;
+}
+
+.droit, .droit ul{
+    /*border: 2px solid white;*/
+    font-size: 1.5vw;
+    align-items:center ;
+    display: flex;
+    width: 140%;
+    margin: 7% 0 0 -10%;
+
+}
+
+.rond::before{
+    content: "•";
+    color: #DF99F2;
+}
+.droit ul li{
+    /*border: 2px solid white;*/
+    font-size:1.5vw ;
+}
+
+.pages li a.active{
+    color: red;
+}
+

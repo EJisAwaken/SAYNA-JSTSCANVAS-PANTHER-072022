@@ -1,0 +1,206 @@
+
+@font-face {
+    font-family: Wakanda;
+    src: url("../fonts/wakanda_forever/WakandaForever-Regular.ttf");
+}
+
+main{
+    margin: 0 0 0 8%;
+}
+
+
+                                /*La premiere partie*/
+
+.partie1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+
+.enigme-txt2{
+    position: absolute;
+}
+
+.enigme-txt2 p{
+    margin: 60% 0 0 5%;
+    font-size: 1vw;
+    width: 90%;
+}
+
+.decor img{
+    position: absolute;
+    width: 125% ;
+    margin: 30% 0 0 -10%;
+    filter: brightness(300%);
+
+}
+
+.ligne{
+    position: absolute;
+    margin: -17vw 0 0 0;
+    width: 50%;
+}
+.enigme-text1{
+    position: absolute;
+    width: 28%;
+    padding: 2%;
+    margin: -30% 0 0 55%;
+}
+
+#title h1{
+    font-size:3.5vw;
+    width: 120%;
+ }
+
+
+#enigme-img{
+    width: 75%;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+                            /*La deuxieme partie*/
+
+
+.notation{
+    font-family: Wakanda;
+    width: 60%;
+    font-weight: lighter;
+}
+
+.alpha{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+}
+
+[type="text"]{
+    border: 2px solid #DF99F2;
+    width: 70%;
+    padding: 2%;
+    border-radius: 40px;
+}
+
+#btn2{
+    background-color: #DF99F2;
+    padding: 2% 8%;
+    border-radius: 40px;
+    margin: 0 40%;
+}
+
+.savoir{
+    position: absolute;
+    width: 35%;
+    margin:0 10% 0 52%;
+}
+
+.savoir p{
+    text-align: center;
+    font-size: 1vw;
+
+}
+
+.decor2 img{
+    position: absolute;
+    width: 40% ;
+    margin: -7% 0 0 -42%;
+    filter: brightness(300%);
+}
+
+.alphabet{
+    letter-spacing: initial;
+    width: 45%;
+}
+
+#form-enigme{
+    margin:30% 0 10% 0;
+}
+
+
+
+footer{
+    margin-top: 20%;
+}
+
+
+
+.scroll{
+    margin: 0 0 0 10px;
+    position: fixed;
+}
+
+.scroll-1{
+    width: max-content;
+    margin: 0 0 0 10px;
+}
+
+.ligned{
+    background-color: #DF99F2;
+    margin: -500px 0 0 20px;
+    width: 3px;
+    max-height: 400px;
+}
+
+
+.ligneg{
+    margin: -70px 0 0 0px;
+    border: 1px solid #DF99F2;
+    background-color: #DF99F2;
+    width: 3px;
+    max-height: 400px;
+}
+
+/*CSS DU QUIZ ENIGME*/
+
+
+#enigme-titre{
+    color: #DF99F2;
+    margin: 0 0 2% 0;
+    font-size: 1.8vw;
+}
+#numero{
+    color: #DF99F2;
+    font-weight: bold;
+}
+
+#sujet{
+    width: 50%;
+    font-size: 1.6vw;
+    margin: 0 0 5% 0;
+}
+
+#rps1{
+    margin: 0 0 -7% 0;
+    font-size: 2.4vw;
+    font-family: Wakanda;
+    width: 50%;
+    color: #DF99F2;
+    font-weight: lighter;
+}
+
+#reponse{
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #DF99F2;
+}
+
+#lettre{
+    font-size: 1.8vw;
+}
+
+#numero{
+    font-family: "Agency FB";
+    font-size:1.8vw;
+}
+
+#pantb{
+    width: 15%;
+}
+
+#pant{
+    text-align: center;
+}
